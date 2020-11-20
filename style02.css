@@ -68,6 +68,8 @@ input {
 
 .container {
     grid-area: result;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .resultat {
