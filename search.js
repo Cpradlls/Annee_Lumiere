@@ -11,6 +11,7 @@ let dbSearch = async function(movieTitle) {
     let json = await response.json();
     if (json.Response != "False") {
       document.getElementById("pageStyle").setAttribute("href","style02.css");
+      document.querySelector(".imgBackGround").innerHTML = `.container{background-image: url('${json.Poster}'); } `;
       document.querySelector(".resultat").innerHTML =
        `<legend>Résultat de la recherche "${movieTitle}"</legend>`
        
